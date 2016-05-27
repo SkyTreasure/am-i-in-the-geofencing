@@ -370,7 +370,7 @@ public class MainActivity extends ActionBarActivity implements
                             Geofence.GEOFENCE_TRANSITION_EXIT)
                     .setExpirationDuration(
                             12 * 60 * 60 * 1000)  // 12 hours
-                    .setLoiteringDelay(5000)   // 2 minutes
+                    .setLoiteringDelay(1000*60*10)   // 10 minutes
                     .setRequestId(entry.getKey())
                     .setNotificationResponsiveness(5000)
                     // Create the geofence.
@@ -527,7 +527,7 @@ public class MainActivity extends ActionBarActivity implements
                                 Geofence.GEOFENCE_TRANSITION_EXIT)
                         .setExpirationDuration(
                                 12 * 60 * 60 * 1000)  // 12 hours
-                        .setLoiteringDelay(5000)   // 2 minutes
+                        .setLoiteringDelay(1000*60*10)   // 2 minutes
                         .setRequestId(entry.getKey())
                         .setNotificationResponsiveness(5000)
                         // Create the geofence.
